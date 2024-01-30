@@ -1,5 +1,3 @@
-
-
 document.getElementById('btn-calculate').addEventListener('click', function () {
     const incomeAmount = getInputFieldValueById('income-field');
     const foodAmount = getInputFieldValueById('food-field');
@@ -11,10 +9,7 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     const balanceAmount = incomeAmount - sumOfExpense;
 
     const totalExpense = getTextElementValueById('total-expense-amount');
-
     setTextElementValueById('total-expense-amount', sumOfExpense);
 
     setTextElementValueById('currentBalance', balanceAmount);
-
-    // console.log(x);
 })
