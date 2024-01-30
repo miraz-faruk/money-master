@@ -26,34 +26,36 @@
             <div>
                 <h3 class="text-2xl font-medium text-center mt-14">Income</h3>
                 <div class="mt-8 grid grid-cols-1 gap-5">
+                    <!-- income part -->
                     <div class="flex justify-evenly items-center gap-5">
                         <label class="text-lg text-right w-1/4" for="">Income:</label>
-                        <input class="bg-gray-300 rounded-sm px-5 py-2 text-lg" type="text" name="" id=""
+                        <input id="income-field" class="bg-gray-300 rounded-sm px-5 py-2 text-lg" type="text" name=""
                             placeholder="Income Amount">
                     </div>
                     <h3 class="text-2xl font-medium text-center mt-3">Expenses</h3>
                     <div class="flex justify-evenly items-center gap-5">
                         <label class="text-lg text-right w-1/4" for="">Food:</label>
-                        <input class="bg-gray-300 rounded-sm px-5 py-2 text-lg" type="text" name="" id=""
+                        <input id="food-field" class="bg-gray-300 rounded-sm px-5 py-2 text-lg" type="text" name=""
                             placeholder="Food Expense">
                     </div>
                     <div class="flex justify-evenly items-center gap-5">
                         <label class="text-lg text-right w-1/4" for="">Rent:</label>
-                        <input class="bg-gray-300 rounded-sm px-5 py-2 text-lg" type="text" name="" id=""
+                        <input id="rent-field" class="bg-gray-300 rounded-sm px-5 py-2 text-lg" type="text" name=""
                             placeholder="Rent Amount">
                     </div>
                     <div class="flex justify-evenly items-center gap-5">
                         <label class="text-lg text-right w-1/4" for="">Clothes:</label>
-                        <input class="bg-gray-300 rounded-sm px-5 py-2 text-lg" type="text" name="" id=""
+                        <input id="cloth-field" class="bg-gray-300 rounded-sm px-5 py-2 text-lg" type="text" name=""
                             placeholder="Clothes Expense">
                     </div>
                 </div>
                 <div class="text-center">
-                    <button class=" text-xl font-bold bg-blue-400 mt-6 px-14 py-3 rounded text-white">Calculate</button>
+                    <button id="btn-calculate"
+                        class=" text-xl font-bold bg-blue-400 mt-6 px-14 py-3 rounded text-white">Calculate</button>
                 </div>
                 <div class="text-2xl font-medium text-center">
-                    <h3 class="mt-6">Total Expenses: <span>1000</span></h3>
-                    <h3 class="mt-7">Balance: <span>1000</span></h3>
+                    <h3 class="mt-6">Total Expenses: <span id="total-expense-amount">0</span></h3>
+                    <h3 class="mt-7">Balance: <span id="currentBalance">0</span></h3>
                 </div>
                 <div class="text-center mt-8">
                     <label class="text-lg me-2" for="">Save:</label>
@@ -69,6 +71,8 @@
             </div>
         </section>
     </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/income-expense.js"></script>
 </body>
 
 </html>
